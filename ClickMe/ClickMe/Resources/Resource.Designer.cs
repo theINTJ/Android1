@@ -67,7 +67,7 @@ namespace ClickMe
 			public const int btnIncrease = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int textView1 = 2131034113;
+			public const int lblValue = 2131034113;
 			
 			static Id()
 			{

@@ -12,12 +12,27 @@ namespace ClickMe
     public class MainActivity : Activity
     {
         Button btnIncrease, btnDecrease;
-
+        TextView lblValue;
+        int Value = 0;
 
         private void SetupResources()
         {
-            btnIncrease = (Button)FindViewById(Resource.Id.btnIncrease);
-            btnDecrease = (Button)FindViewById(Resource.Id.btnDecrease);
+            btnIncrease = FindViewById<Button>(Resource.Id.btnIncrease);
+            btnIncrease.Click += (s, e) =>
+            {
+                SetValue(++Value);
+            };
+            btnDecrease = FindViewById<Button>(Resource.Id.btnDecrease);
+            btnDecrease.Click += (s, e) =>
+            {
+                SetValue(--Value);
+            };
+            lblValue = FindViewById<TextView>(Resource.Id.lblValue);
+        }
+
+        private void SetValue(int AValue)
+        {
+            lblValue.Text = AValue.ToString();
         }
 
         protected override void OnCreate(Bundle bundle)
