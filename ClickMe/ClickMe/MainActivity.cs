@@ -18,13 +18,21 @@ namespace ClickMe
         private void SetupResources()
         {
             btnIncrease = FindViewById<Button>(Resource.Id.btnIncrease);
+            btnIncrease.Click += (s, e) =>
+            {
+                SetValue(++Value);
+            };
             btnDecrease = FindViewById<Button>(Resource.Id.btnDecrease);
+            btnDecrease.Click += (s, e) =>
+            {
+                SetValue(--Value);
+            };
             lblValue = FindViewById<TextView>(Resource.Id.lblValue);
         }
 
-        private void SetValue()
+        private void SetValue(int AValue)
         {
-            lblValue.Text = Value.ToString();
+            lblValue.Text = AValue.ToString();
         }
 
         protected override void OnCreate(Bundle bundle)
