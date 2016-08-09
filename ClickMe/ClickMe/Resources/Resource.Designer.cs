@@ -57,6 +57,28 @@ namespace ClickMe
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050002
+			public const int btnDecrease = 2131034114;
+			
+			// aapt resource value: 0x7f050000
+			public const int btnIncrease = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int textView1 = 2131034113;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
@@ -78,6 +100,12 @@ namespace ClickMe
 			
 			// aapt resource value: 0x7f040000
 			public const int ApplicationName = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int DecreaseBtn = 2130968578;
+			
+			// aapt resource value: 0x7f040001
+			public const int IncreaseBtn = 2130968577;
 			
 			static String()
 			{
