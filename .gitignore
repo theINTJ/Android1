@@ -1,2 +1,4 @@
 *.flag
 ClickMe/ClickMe/obj/Debug/
+*.apk
+*.mdb
