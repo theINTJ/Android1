@@ -14,6 +14,7 @@ namespace ClickMe
         Button btnIncrease, btnDecrease;
         TextView lblValue;
         int Value = 0;
+        const string keyValue = "value";
 
         private void SetupResources()
         {
@@ -43,7 +44,20 @@ namespace ClickMe
             SetContentView(Resource.Layout.Main);
 
             SetupResources();
+
+            if (bundle != null)
+            {
+                Value = bundle.GetInt(keyValue);
+                SetValue(Value);
+            }            
         }
+
+        protected override void OnSaveInstanceState(Bundle outState)
+        {     
+            base.OnSaveInstanceState(outState);
+            outState.PutInt(keyValue, Value);
+        }
+
     }
 }
 
