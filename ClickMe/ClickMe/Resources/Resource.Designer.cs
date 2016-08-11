@@ -66,6 +66,9 @@ namespace ClickMe
 			// aapt resource value: 0x7f050000
 			public const int btnIncrease = 2131034112;
 			
+			// aapt resource value: 0x7f050003
+			public const int btnInfo = 2131034115;
+			
 			// aapt resource value: 0x7f050001
 			public const int lblValue = 2131034113;
 			
@@ -109,6 +112,9 @@ namespace ClickMe
 			
 			// aapt resource value: 0x7f040001
 			public const int IncreaseBtn = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int InfoBtn = 2130968579;
 			
 			static String()
 			{

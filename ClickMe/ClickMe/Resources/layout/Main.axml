@@ -26,4 +26,9 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnDecrease" />
+    <Button
+        android:text="@string/InfoBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInfo" />
 </LinearLayout>

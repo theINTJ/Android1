@@ -3,4 +3,5 @@
     <string name="ApplicationName">ClickMe</string>
   <string name="IncreaseBtn">Increase Value</string>
   <string name="DecreaseBtn">Decrease Value</string>
+  <string name="InfoBtn">Info</string>
 </resources>
