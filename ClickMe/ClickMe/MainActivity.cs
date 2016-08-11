@@ -11,7 +11,7 @@ namespace ClickMe
     [Activity(Label = "ClickMe", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        Button btnIncrease, btnDecrease;
+        Button btnIncrease, btnDecrease, btnInfo;
         TextView lblValue;
         int Value = 0;
 
@@ -27,6 +27,12 @@ namespace ClickMe
             {
                 SetValue(--Value);
             };
+            btnInfo = FindViewById<Button>(Resource.Id.btnInfo);
+            btnInfo.Click += (s, e) =>
+            {
+                // do something
+            };
+
             lblValue = FindViewById<TextView>(Resource.Id.lblValue);
         }
 
