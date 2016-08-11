@@ -30,7 +30,9 @@ namespace ClickMe
             btnInfo = FindViewById<Button>(Resource.Id.btnInfo);
             btnInfo.Click += (s, e) =>
             {
-                // do something
+                Intent i = new Intent(this, typeof(InfoActivity));
+                i.PutExtra("value", Value);
+                StartActivity(i);
             };
 
             lblValue = FindViewById<TextView>(Resource.Id.lblValue);
