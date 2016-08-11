@@ -19,6 +19,7 @@ namespace ClickMe
         {
             base.OnCreate(savedInstanceState);
 
+            SetContentView(Resource.Layout.Info);
             // Create your application here
         }
     }
